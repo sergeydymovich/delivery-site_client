@@ -7,6 +7,7 @@ const StyledContainer = styled.div`
   .layout {
     margin-top: 90px;
     min-height: calc(100vh - 90px);
+    background: #fff8ef;
   }
 `
 
