@@ -15,10 +15,6 @@ const StyledContainer = styled.header`
 
   .header {
     height: 90px;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding-right: 15px;
-    padding-left: 15px;
     display: flex;
     align-items: center;
   }
@@ -67,7 +63,7 @@ const StyledContainer = styled.header`
 export default function Header() {
   return (
       <StyledContainer>
-        <div className='header'>
+        <div className={`header wrapper`}>
           <Logo />
           <nav className='navigation'>
             <ul className='list'>
@@ -111,8 +107,7 @@ export default function Header() {
                 <BasketIcon className='basket-icon' />
                 0
               </Button>
-            </a>
-        
+            </a> 
           </Link>
         </div>       
       </StyledContainer>  

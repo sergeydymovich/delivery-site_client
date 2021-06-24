@@ -1,5 +1,10 @@
+import Banner from "components/elements/Banner/Banner";
+
 export default function HomePage() {
   return (
-        <h1>INDEX PAGE</h1>
+    <>
+      <Banner />
+      <h1>INDEX PAGE</h1>
+    </>
   )
 }
