@@ -1,4 +1,5 @@
 import Header from "components/elements/Header/Header";
+import Footer from 'components/elements/Footer/Footer';
 import Head from 'next/head';
 import styled from 'styled-components';
 
@@ -19,6 +20,7 @@ export default function Layout({ children }) {
           <div className="layout">
             {children}
           </div>
+          <Footer />
         </StyledContainer>
   )
 }

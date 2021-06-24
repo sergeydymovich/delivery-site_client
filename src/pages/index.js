@@ -4,7 +4,7 @@ export default function HomePage() {
   return (
     <>
       <Banner />
-      <h1>INDEX PAGE</h1>
+      <h1>Home</h1>
     </>
   )
 }
