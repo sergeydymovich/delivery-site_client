@@ -18,7 +18,7 @@ const StyledContainer = styled.a`
 `
 
 
-const Logo = ({ width = 50, height = 50 }) => {
+const Logo = ({ width = 90, height = 90 }) => {
 
   return (
     <Link href='/' passHref>

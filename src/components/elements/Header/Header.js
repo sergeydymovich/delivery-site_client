@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import Logo from 'components/ui-kit/Logo/Logo';
 import Button from 'components/ui-kit/Button/Button';
 import PhoneIcon from 'public/svg/phone.svg';
+import BasketIcon from 'public/svg/basket.svg';
 
 const StyledContainer = styled.header`
   position: fixed;
@@ -42,7 +43,7 @@ const StyledContainer = styled.header`
     display: flex;
     align-items: center;
     color: #817E71;
-
+    margin-right: 20px;
   }
 
   .phone-icon {
@@ -53,10 +54,12 @@ const StyledContainer = styled.header`
 
   .phone {
     font-size: 30px; 
+    font-weight: 700;
   }
 
-  .basket-button {
-    background-color: red;
+  .basket-icon {
+    width: 20px;
+    margin-right: 10px;
   }
 
 `
@@ -102,7 +105,15 @@ export default function Header() {
             <PhoneIcon className='phone-icon' />
             <p className='phone'>7777</p>
           </div>
-          <Button className='basket-button'>КНОПКА!</Button>
+          <Link href='/' passHref>
+            <a>
+              <Button theme='basket'>
+                <BasketIcon className='basket-icon' />
+                0
+              </Button>
+            </a>
+        
+          </Link>
         </div>       
       </StyledContainer>  
   )
