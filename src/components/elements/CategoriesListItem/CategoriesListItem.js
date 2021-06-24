@@ -19,6 +19,7 @@ const StyledContainer = styled.li`
     color: #817E71;
     text-align: center;
     transition: all .3s ease;
+    background-color: white;
   }
 
   .button:hover {

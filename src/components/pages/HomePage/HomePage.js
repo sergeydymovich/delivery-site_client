@@ -1,15 +1,12 @@
 import CategoriesList from 'components/elements/CategoriesList/CategoriesList';
-import styled from 'styled-components';
-
-const StyledContainer = styled.main`
-  
-`
+import ProductsList from 'components/elements/ProductsList/ProductsList';
 
  const HomeContent = () => {
   return (
-        <StyledContainer>
+        <main>
           <CategoriesList />
-        </StyledContainer>
+          <ProductsList />
+        </main>
   )
 }
 

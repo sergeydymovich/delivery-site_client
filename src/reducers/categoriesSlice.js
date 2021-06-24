@@ -18,7 +18,7 @@ export const categoriesSlice = createSlice({
   name: "categories",
   initialState: {
     categoriesArr: [],
-    activeCategory: '',
+    activeCategory: '60d484f71e81630c5cc9519c',
   },
   reducers: {
     setActiveCategory: (state, action) => {

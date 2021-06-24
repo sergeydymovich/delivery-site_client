@@ -16,6 +16,7 @@ const StyledContainer = styled.button`
 
   &.button__theme-primary {
     border-radius: 24px;
+    padding: 17px 38px;
   }
 
   &.button__theme-basket {
