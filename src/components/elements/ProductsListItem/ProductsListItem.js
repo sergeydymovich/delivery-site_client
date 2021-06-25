@@ -1,4 +1,5 @@
 import Button from 'components/ui-kit/Button/Button';
+import Image from 'next/image';
 import styled from 'styled-components';
 
 const StyledContainer = styled.li`
@@ -16,12 +17,6 @@ const StyledContainer = styled.li`
     height: 100%;
     box-shadow: 0 0 15px rgba(185, 185, 185, 0.43);
     box-sizing: border-box;
-  }
-
-  .product-image {
-    max-width: 100%;
-    height: auto;
-    cursor: pointer;
   }
 
   .product-info {
@@ -74,17 +69,39 @@ const StyledContainer = styled.li`
     justify-content: space-between;
     height: 100%;
   }
+
+  @media screen and (max-width: 1100px) {
+    width: 33.3333%;
+}
+
+
+@media screen and (max-width: 960px) {
+    width: 50%;
+
+}
+
+
+@media screen and (max-width: 600px) {
+    width: 100%;
+}
+
+@media screen and (max-width: 480px) {
+  
+}
 `
 
  const ProductsListItem = ({ product }) => {
   return (
         <StyledContainer>
           <div className='product-wrapper'>
-            <img
-              className='product-image'
-              src={product.imageSrc}
-              alt={product.name}
-            />
+            <div>
+              <Image
+                  src={product.imageSrc}
+                  alt="product"
+                  width={500}
+                  height={500}
+                /> 
+            </div>
             <div className='product-info'>
               <h2 className='product-name'>
                 {product.name}
